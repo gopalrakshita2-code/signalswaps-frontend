@@ -118,5 +118,9 @@ constructor(private apiService: Apiservice, private http: HttpClient) {
             return this.apiService.postFormData(`user/add/loan`, payload)
         }
 
+        withdrawFunds(payload: any): Observable<any> {
+            return this.apiService.post(`user/withdraw/funds`, payload)
+        }
+
 
 }
