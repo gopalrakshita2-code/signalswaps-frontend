@@ -10,6 +10,8 @@ import { TagModule } from 'primeng/tag';
 import { ProductService } from '../service/product.service';
 import { DashboardData } from '../service/dashboard-data';
 import { Router } from '@angular/router';
+import { DialogModule } from 'primeng/dialog';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 interface AITradingData {
     period: string;
@@ -27,7 +29,7 @@ const aitradingData: AITradingData[] = [
 @Component({
     selector: 'app-list-demo',
     standalone: true,
-    imports: [CommonModule, DataViewModule, FormsModule, SelectButtonModule, PickListModule, OrderListModule, TagModule, ButtonModule],
+    imports: [CommonModule, DataViewModule, FormsModule, SelectButtonModule, PickListModule, OrderListModule, TagModule, ButtonModule ,DialogModule,InputNumberModule],
     templateUrl: './listdemo.html',
     styles: `
         ::ng-deep {
