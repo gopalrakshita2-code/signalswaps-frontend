@@ -81,10 +81,12 @@ export class ListDemo {
     selectTradingPlan(data: any) {
         this.selectedTradingPlanPopUpData = data;
         this.AIPlanPopUpVisible = true;
+        this.amountErrorMessage = '';
     }
     onTryAgain() {
         this.AIPlanPopUpVisible = false;
         this.UserAiTradeAmount = null;
+        this.amountErrorMessage = '';
     }
 
     fetchUserBalance() {
