@@ -16,11 +16,13 @@ import { TreeDemo } from './treedemo';
 import { MenuDemo } from './menudemo';
 import { AiTradeHistory } from './ai-trade-history/ai-trade-history';
 import { DepositHistory } from './deposit-history/deposit-history';
+import { WithdrawalHistory } from './withdrawal-history/withdrawal-history';
 
 export default [
     { path: 'deposit', data: { breadcrumb: 'Button' }, component: ButtonDemo },
     { path: 'deposit-history', data: { breadcrumb: 'Button' }, component: DepositHistory },
     { path: 'charts', data: { breadcrumb: 'Charts' }, component: ChartDemo },
+    { path: 'withdrawal-history', data: { breadcrumb: 'Withdrawal History' }, component: WithdrawalHistory },
     { path: 'file', data: { breadcrumb: 'File' }, component: FileDemo },
     { path: 'market', data: { breadcrumb: 'Form Layout' }, component: FormLayoutDemo },
     { path: 'support', data: { breadcrumb: 'Input' }, component: InputDemo },

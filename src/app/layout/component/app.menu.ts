@@ -18,7 +18,7 @@ import { AppMenuitem } from './app.menuitem';
 export class AppMenu {
     model: MenuItem[] = [];
 
-   ngOnInit() {
+    ngOnInit() {
         this.model = [
             {
                 label: 'Home',
@@ -30,6 +30,7 @@ export class AppMenu {
                     { label: 'Deposit', icon: 'pi pi-fw pi-wallet', routerLink: ['/app/page/deposit'] },
                     { label: 'Deposit History', icon: 'pi pi-fw pi-history', routerLink: ['/app/page/deposit-history'] },
                     { label: 'Withdraw', icon: 'pi pi-fw pi-arrow-down', routerLink: ['/app/page/withdraw'] },
+                    { label: 'Withdrawal History', icon: 'pi pi-fw pi-history', routerLink: ['/app/page/withdrawal-history'] },
                     { label: 'Spot Trade', icon: 'pi pi-fw pi-chart-scatter', routerLink: ['/app/page/spot-trade'] },
                     { label: 'Trade History', icon: 'pi pi-fw pi-history', routerLink: ['/app/page/trade-history'] },
                     { label: 'Events', icon: 'pi pi-fw pi-calendar', routerLink: ['/app/page/events'] },
@@ -66,7 +67,7 @@ export class AppMenu {
                                 label: 'Trade History',    // Sub-menu for history
                                 icon: 'pi pi-fw pi-clock',
                                 routerLink: ['/app/page/ai-trade-history']
-                             },
+                            },
                             // {
                             //     label: 'Login',
                             //     icon: 'pi pi-fw pi-sign-in',
