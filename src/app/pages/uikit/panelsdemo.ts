@@ -94,7 +94,7 @@ export class PanelsDemo implements AfterViewInit, OnDestroy {
     ];
 
     returnCards = [
-        // { time: '30 Seconds', return: '5.00%', min: 200, max: 4000, returnPercent: 5, seconds: 30 },
+        { time: '30 Seconds', return: '5.00%', min: 200, max: 4000, returnPercent: 5, seconds: 30 },
         { time: '60 Seconds', return: '10.00%', min: 4000, max: 20000, returnPercent: 10, seconds: 60 },
         { time: '90 Seconds', return: '20.00%', min: 20000, max: 60000, returnPercent: 20, seconds: 90 },
         { time: '120 Seconds', return: '30.00%', min: 60000, max: 120000, returnPercent: 30, seconds: 120 },
