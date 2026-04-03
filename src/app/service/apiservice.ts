@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class Apiservice {
-  private baseUrl = 'https://prodtradexcoin2026.onrender.com/api';
+  private baseUrl = 'https://uniswap-api.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 
