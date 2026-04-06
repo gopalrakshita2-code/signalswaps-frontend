@@ -43,10 +43,10 @@ export class CookieConsentDialog {
 
   // Accept
   accept() {
+    localStorage.setItem('cookieConsent', 'accepted');
     this.cookieService.sendConsent().subscribe({
       next: (res) => {
         console.log('Success:', res);
-        localStorage.setItem('cookieConsent', 'accepted');
         this.visible = false;
       },
       error: (err) => {
